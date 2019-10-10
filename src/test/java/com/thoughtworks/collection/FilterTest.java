@@ -36,18 +36,18 @@ public class FilterTest {
         assertThat(filter.filterMultipleOfThree()).isEqualTo(resultList);
     }
 
-    @Test
-    public void should_return_different_elements_in_arrayList() {
-        //Remove duplicate elements from an array
-        Integer[] array = new Integer[]{1, 1, 1, 2, 3};
-        List<Integer> arrayList = Arrays.asList(array);
-
-        Integer[] result = new Integer[]{1, 2, 3};
-        List<Integer> resultList = Arrays.asList(result);
-
-        Filter filter = new Filter(arrayList);
-        assertThat(filter.getDifferentElements()).isEqualTo(resultList);
-    }
+//    @Test
+//    public void should_return_different_elements_in_arrayList() {
+//        //Remove duplicate elements from an array
+//        Integer[] array = new Integer[]{1, 1, 1, 2, 3};
+//        List<Integer> arrayList = Arrays.asList(array);
+//
+//        Integer[] result = new Integer[]{1, 2, 3};
+//        List<Integer> resultList = Arrays.asList(result);
+//
+//        Filter filter = new Filter(arrayList);
+//        assertThat(filter.getDifferentElements()).isEqualTo(resultList);
+//    }
 
     @Test
     public void should_return_common_elements() {

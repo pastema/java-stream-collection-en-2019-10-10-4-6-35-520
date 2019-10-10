@@ -74,25 +74,10 @@ public class Add {
                         .filter(value -> value % 2 != 0).mapToDouble(number -> number).count();
     }
 
-//    public boolean isIncludedInEvenIndex(List<Integer> arrayList, Integer specialElment) {
-//        System.out.println(arrayList.stream()
-//                .map(number ->{
-//                    Integer getevenOrAdd = number % 2;
-//                    if(getevenOrAdd == 0 ){
-//                        return true;
-//                    }
-//                    else{
-//                        return false;
-//                    }
-//                }));
-//
-//        return arrayList.stream()
-//                .filter(number -> number % 2 != 0).equals(Stream.empty());
-//        return arrayList.stream()
-//                .filter(number -> number % 2 != 0);
-//                .filter(number1 -> specialElment.toString().contains(number1.toString()))
-                //.map(number -> number.compareTo(specialElment) == true);
-//    }
+    public boolean isIncludedInEvenIndex(List<Integer> arrayList, Integer specialElment) {
+        return arrayList.indexOf(specialElment) > -1 ?
+                (specialElment % 2 == 0 ? true : false) : false;
+    }
 
     public List<Integer> getUnrepeatedFromEvenIndex(List<Integer> arrayList) {
         return  arrayList.stream()
