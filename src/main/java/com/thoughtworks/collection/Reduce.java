@@ -15,6 +15,8 @@ public class Reduce {
     }
 
     public int getMaximum() {
+//        return arrayList.stream()
+//                .reduce(number -> number)
         return  Collections.max(arrayList);
     }
 
